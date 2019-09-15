@@ -1,0 +1,18 @@
+var
+ i,n: Byte;
+
+Function Fib(k:integer):integer;
+  Begin
+    If (k=1) or (k=2) then
+      Result:=1
+      
+    else
+      Result:=Fib(k-1)+Fib(k-2);
+  End;
+
+Begin
+  writeln('enter n');
+  readln(n);
+  for i:=1 to n do Writeln(Число фибоначчи от ',i,'=',Fib(i));
+  Readln;
+End.
